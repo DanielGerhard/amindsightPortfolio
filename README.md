@@ -1,1 +1,1 @@
-# Online at: www.amindsight.pythonanywhere.com
+# Online at: amindsight.pythonanywhere.com
