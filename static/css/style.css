@@ -1,0 +1,440 @@
+
+/* ===================================================================================*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------- amindsight Styles ----------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/* ===================================================================================*/
+
+
+/* VARIABLES =========================================================================*/
+
+:root {
+    --textcolor: rgb(221, 226, 231);
+    --background-menu: rgb(15, 2, 2);
+    --backgroundColor: rgb(10, 10, 10);
+    --GridBackGroundColor: rgb(10, 10, 14);
+    --HeaderGradient0: rgb(15, 2, 2);
+    --HeaderGradient1: rgb(15, 2, 2);
+    --HeaderGradient2: rgba(10, 10, 14, 0.062);
+    --HeaderGradient3: rgba(10, 10, 14, 0);
+}
+
+/* FONTS =================================================================*/
+
+p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--textcolor);
+    max-width: 80%;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--textcolor);
+    max-width: 80%;
+}
+
+p,h2:hover{
+    color: rgb(248, 246, 246);
+
+}
+
+.portfolio ul li{
+    color:  var(--textcolor);
+}
+
+/* MAIN CONTAINER =========================================================================*/
+
+* {
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+body {
+    background-image: url("img/capasite/CAPASITE.jpg");
+    background-color: var(--backgroundColor);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    padding: 0;
+}
+
+/* HEADER =========================================================================*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    padding-top: 0rem;
+    margin-bottom: 2rem;;
+    
+}
+
+.home{
+    padding: 0;
+    font-weight: bold;
+    font-size: 4vw;
+    color: rgb(197, 28, 28);
+    text-shadow: 0.02em 0.098rem 0.0rem rgba(255, 217, 49, 0.637),0.02em 0.098rem 0.2rem rgba(219, 69, 0, 0.884),0.02em 0.098rem 0.2rem rgba(219, 69, 0, 0.884);
+    text-align: left;
+}
+
+/* MENU =========================================================================*/
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 3vw;
+    color: firebrick;
+    margin-right: 0;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-decoration: none;
+    text-shadow: 0.02em 0.098rem 0.0rem rgba(255, 217, 49, 0.637),0.02em 0.098rem 0.2rem rgba(219, 69, 0, 0.884),0.02em 0.098rem 0.2rem rgba(219, 69, 0, 0.884);
+}
+
+.divider{
+    font-size: 0.5em;
+    padding-top: 0.3em;
+}
+
+/* SUBTITLE =========================================================================*/
+
+.subtitle-container{
+    
+    display: block;
+    padding-top: 18vh;
+    padding-bottom: 40vh;
+    align-items: center;
+}
+
+.pagesubtitle{
+    white-space: nowrap;
+    font-weight: lighter;
+    font-family: Georgia, serif;
+    font-size: 3vw;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0 0 0.1em black,0 0 0.1em black,0 0 0.1em black;
+}
+
+
+/* LINK DECORATION =========================================================================*/
+
+a:link {
+    color: firebrick;
+    text-decoration-line: none;
+  }
+
+a:visited {
+    color: firebrick;
+
+}
+
+a:active {
+    color: rgb(255, 102, 0);
+  }
+  
+a:hover{
+    color: rgb(196, 56, 13);
+    text-shadow: 0.02em 0.098rem 0.0rem rgba(255, 217, 49, 0.637),0.02em 0.098rem 0.2rem rgba(219, 69, 0, 0.884),0.02em 0.098rem 0.2rem rgba(219, 69, 0, 0.884),
+    0 0 0.1em  rgb(250, 225, 0);
+}
+
+.onpage{
+    color: rgba(255, 115, 0, 0.527);
+}
+
+
+/* GRID =========================================================================*/
+
+.grid-wrap {
+    object-fit: cover;
+    justify-content: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 2.9rem;
+    background: linear-gradient(0deg, 
+                                var(--GridBackGroundColor) 0%, 
+                                var(--GridBackGroundColor) 99.82%,
+                                rgba(10, 10, 14, 0.233) 99.95%,
+                                rgba(10, 10, 14, 0) 100%
+                                );
+}
+
+.gallery{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    gap: 0.1rem;
+}
+
+.gallery li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* VIGNET */
+
+.vignette{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgb(0, 0, 0) inset;
+    z-index:-1;  
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-container{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.portfolio-index ul{
+    list-style-type:none;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 7vh;
+    padding: 0;
+    max-width: 80%;
+}
+
+.portfolio-index ul li:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 0.1em white;
+}
+
+
+
+.line-separator{
+    margin-top: 2rem;
+    background-color: aliceblue;
+    height: 0.1em;
+    width: 80%;
+    border-radius: 800%;
+}
+
+.descriptiion{
+    text-align: center;
+}
+
+.amindsight-portfolio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio{
+    background-image: none;
+}
+
+.portfolio .vignette{
+
+    opacity: 70%;
+}
+
+.portfolio .header-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 18em;
+    background: linear-gradient(180deg, var(--HeaderGradient0) 0%, var(--HeaderGradient1) 34%, var(--HeaderGradient2) 82%, var(--HeaderGradient3) 100%);
+    padding-bottom: 10rem;
+    z-index: -1;
+}
+
+/* ABOUT */
+
+.about{
+    background-image: none;
+    }
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about .header-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 18em;
+    background: linear-gradient(180deg, var(--HeaderGradient0) 0%, var(--HeaderGradient1) 34%, var(--HeaderGradient2) 82%, var(--HeaderGradient3) 100%);
+    padding-bottom: 10rem;
+    z-index: -1;
+}
+
+.about img{
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 42%;
+}
+
+.about p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: aliceblue;
+    text-align: center;
+    margin: 10vw;
+    margin-top: 3em;
+}   
+
+
+/* 
+=================================================================
+Media Queries
+=================================================================
+*/
+
+/*HIGH-RESOLUTION*/
+
+@media screen and (min-width: 3300px){
+    .home {
+    font-size: 5vw;
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 55rem) {
+  
+    .home {
+        right: 0;
+        margin-top: 0.6rem;
+        margin-right: 1rem;
+        text-align: left;
+        font-size: 3rem;
+    }
+   
+    .hamburger{
+        padding-top: 1.05em;
+        align-items: center;
+        margin: auto;
+        margin-right: 0;
+        z-index: 1;
+    }
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        display: block;
+    }
+   
+    .menu {
+        background-color: var(--HeaderGradient0);
+        padding-top: 0px;
+        margin-top: 0;
+        font-size: 8vw;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        gap: 5vh;
+        -webkit-clip-path: circle(00px at 90% 11%); /*30px*/
+        clip-path: circle(00px at 90% 11%);
+        transition: all 0.6s ease-out;
+    }
+
+    .menu.open{
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        clip-path: circle(1000px at 90% -10%);
+    }
+
+
+    .pagesubtitle {
+        font-size: 8vw;
+    }
+
+    .grid-wrap{
+        padding: 0;
+        padding-top: 8vh;
+
+    }
+
+    .gallery{
+    
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+/* VERY VERTICAL MOBILES */
+
+@media screen and (max-width: 15rem) {
+    header{
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-content: left;}
+
+    .home{
+    font-size: 70vw;
+    width: 8vw;
+    margin: 20vw;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;}
+
+    .amindsight{
+        display: none;
+    }
+    
+   
+    .hamburger {
+        padding: 0;
+        width: 8vw;
+        margin: 20vw;
+        object-fit: cover;
+        display: flex;
+    }
+    .grid-wrap{
+        padding-top: 0rem;
+    }
+}
+
